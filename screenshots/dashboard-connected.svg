@@ -1,0 +1,169 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="420" height="680" viewBox="0 0 420 680">
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1e1e2e"/>
+      <stop offset="100%" stop-color="#181825"/>
+    </linearGradient>
+    <linearGradient id="titleIcon" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#6c7eff"/>
+      <stop offset="100%" stop-color="#a855f7"/>
+    </linearGradient>
+    <linearGradient id="greenGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#4ade80"/>
+      <stop offset="100%" stop-color="#22d3ee"/>
+    </linearGradient>
+    <linearGradient id="purpleGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#a855f7"/>
+      <stop offset="100%" stop-color="#6366f1"/>
+    </linearGradient>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#000" flood-opacity="0.3"/>
+    </filter>
+    <clipPath id="roundedWindow">
+      <rect x="20" y="20" width="380" height="640" rx="16"/>
+    </clipPath>
+  </defs>
+
+  <!-- Window shadow -->
+  <rect x="22" y="22" width="380" height="640" rx="16" fill="#000" opacity="0.4" filter="url(#shadow)"/>
+
+  <!-- Window background -->
+  <rect x="20" y="20" width="380" height="640" rx="16" fill="url(#bgGrad)"/>
+
+  <!-- Title Bar -->
+  <g transform="translate(40, 46)">
+    <!-- Shield icon -->
+    <text font-family="-apple-system, SF Pro Display, Helvetica Neue" font-size="22" fill="url(#titleIcon)">&#x1F6E1;</text>
+    <text x="32" y="4" font-family="-apple-system, SF Pro Display, Helvetica Neue" font-size="18" font-weight="700" fill="#cdd6f4">VPN Keep Awake</text>
+    <!-- Gear icon -->
+    <circle cx="320" cy="-2" r="12" fill="transparent"/>
+    <text x="312" y="3" font-family="-apple-system, SF Pro Display, Helvetica Neue" font-size="16" fill="#6c7086">&#x2699;</text>
+  </g>
+
+  <!-- Divider -->
+  <line x1="40" y1="68" x2="380" y2="68" stroke="#313244" stroke-width="1"/>
+
+  <!-- VPN Status Card -->
+  <g transform="translate(40, 84)">
+    <rect width="340" height="110" rx="12" fill="#313244" opacity="0.5"/>
+    <rect width="340" height="110" rx="12" fill="#1e1e2e" opacity="0.3"/>
+
+    <text x="16" y="28" font-family="-apple-system, SF Pro Display, Helvetica Neue" font-size="12" fill="#6c7086">VPN Status</text>
+
+    <!-- Connected badge -->
+    <rect x="16" y="38" width="90" height="24" rx="12" fill="#4ade80" opacity="0.15"/>
+    <circle cx="32" cy="50" r="4" fill="#4ade80"/>
+    <text x="42" y="54" font-family="-apple-system, SF Pro Display, Helvetica Neue" font-size="12" font-weight="600" fill="#4ade80">Connected</text>
+
+    <!-- Uptime -->
+    <text x="116" y="54" font-family="SF Mono, Menlo, monospace" font-size="14" font-weight="500" fill="#6c7086">02:34:17</text>
+
+    <!-- Shield icon -->
+    <text x="290" y="55" font-family="-apple-system, SF Pro Display, Helvetica Neue" font-size="32" fill="url(#greenGrad)">&#x2705;</text>
+
+    <!-- Divider -->
+    <line x1="16" y1="70" x2="324" y2="70" stroke="#45475a" stroke-width="0.5"/>
+
+    <!-- Interface info -->
+    <text x="16" y="88" font-family="-apple-system, SF Pro Display, Helvetica Neue" font-size="10" fill="#6c7086">Interface</text>
+    <text x="16" y="102" font-family="SF Mono, Menlo, monospace" font-size="13" font-weight="500" fill="#cdd6f4">utun7</text>
+
+    <text x="280" y="88" font-family="-apple-system, SF Pro Display, Helvetica Neue" font-size="10" fill="#6c7086" text-anchor="end">IP</text>
+    <text x="324" y="102" font-family="SF Mono, Menlo, monospace" font-size="13" font-weight="500" fill="#cdd6f4" text-anchor="end">10.211.1.42</text>
+  </g>
+
+  <!-- Sleep Protection Card -->
+  <g transform="translate(40, 210)">
+    <rect width="340" height="70" rx="12" fill="#313244" opacity="0.5"/>
+    <rect width="340" height="70" rx="12" fill="#1e1e2e" opacity="0.3"/>
+
+    <text x="16" y="26" font-family="-apple-system, SF Pro Display, Helvetica Neue" font-size="12" fill="#6c7086">Sleep Protection</text>
+
+    <!-- Active badge -->
+    <rect x="16" y="36" width="70" height="24" rx="12" fill="#a855f7" opacity="0.15"/>
+    <circle cx="32" cy="48" r="4" fill="#a855f7"/>
+    <text x="42" y="52" font-family="-apple-system, SF Pro Display, Helvetica Neue" font-size="12" font-weight="600" fill="#a855f7">Active</text>
+
+    <!-- Duration -->
+    <text x="96" y="52" font-family="-apple-system, SF Pro Display, Helvetica Neue" font-size="12" fill="#6c7086">2h 34m protected</text>
+
+    <!-- Toggle switch (ON) -->
+    <rect x="280" y="36" width="44" height="26" rx="13" fill="#4ade80"/>
+    <circle cx="311" cy="49" r="10" fill="white"/>
+  </g>
+
+  <!-- Network Traffic Card -->
+  <g transform="translate(40, 296)">
+    <rect width="340" height="130" rx="12" fill="#313244" opacity="0.5"/>
+    <rect width="340" height="130" rx="12" fill="#1e1e2e" opacity="0.3"/>
+
+    <text x="16" y="26" font-family="-apple-system, SF Pro Display, Helvetica Neue" font-size="12" fill="#6c7086">Network Traffic</text>
+    <text x="324" y="26" font-family="-apple-system, SF Pro Display, Helvetica Neue" font-size="10" fill="#6c7086" text-anchor="end">Total: 847.3 MB</text>
+
+    <!-- Download gauge -->
+    <g transform="translate(16, 40)">
+      <rect width="152" height="80" rx="10" fill="#45475a" opacity="0.3"/>
+      <!-- Arrow down icon -->
+      <text x="14" y="30" font-family="-apple-system, SF Pro Display, Helvetica Neue" font-size="20" fill="#60a5fa">&#x2B07;</text>
+      <text x="42" y="22" font-family="-apple-system, SF Pro Display, Helvetica Neue" font-size="10" fill="#6c7086">Download</text>
+      <text x="42" y="40" font-family="SF Mono, Menlo, monospace" font-size="16" font-weight="700" fill="#60a5fa">2.4</text>
+      <text x="80" y="40" font-family="-apple-system, SF Pro Display, Helvetica Neue" font-size="11" fill="#6c7086">MB/s</text>
+      <!-- Progress bar -->
+      <rect x="14" y="54" width="124" height="4" rx="2" fill="#45475a"/>
+      <rect x="14" y="54" width="75" height="4" rx="2" fill="#60a5fa"/>
+      <text x="14" y="70" font-family="-apple-system, SF Pro Display, Helvetica Neue" font-size="10" fill="#6c7086">612.8 MB</text>
+    </g>
+
+    <!-- Upload gauge -->
+    <g transform="translate(180, 40)">
+      <rect width="152" height="80" rx="10" fill="#45475a" opacity="0.3"/>
+      <!-- Arrow up icon -->
+      <text x="14" y="30" font-family="-apple-system, SF Pro Display, Helvetica Neue" font-size="20" fill="#f97316">&#x2B06;</text>
+      <text x="42" y="22" font-family="-apple-system, SF Pro Display, Helvetica Neue" font-size="10" fill="#6c7086">Upload</text>
+      <text x="42" y="40" font-family="SF Mono, Menlo, monospace" font-size="16" font-weight="700" fill="#f97316">0.8</text>
+      <text x="72" y="40" font-family="-apple-system, SF Pro Display, Helvetica Neue" font-size="11" fill="#6c7086">MB/s</text>
+      <!-- Progress bar -->
+      <rect x="14" y="54" width="124" height="4" rx="2" fill="#45475a"/>
+      <rect x="14" y="54" width="35" height="4" rx="2" fill="#f97316"/>
+      <text x="14" y="70" font-family="-apple-system, SF Pro Display, Helvetica Neue" font-size="10" fill="#6c7086">234.5 MB</text>
+    </g>
+  </g>
+
+  <!-- Daily Statistics Card -->
+  <g transform="translate(40, 442)">
+    <rect width="340" height="90" rx="12" fill="#313244" opacity="0.5"/>
+    <rect width="340" height="90" rx="12" fill="#1e1e2e" opacity="0.3"/>
+
+    <text x="16" y="26" font-family="-apple-system, SF Pro Display, Helvetica Neue" font-size="12" fill="#6c7086">Today's Statistics</text>
+
+    <!-- Connections -->
+    <g transform="translate(16, 38)">
+      <text x="75" y="20" font-family="SF Mono, Menlo, monospace" font-size="28" font-weight="700" fill="#4ade80" text-anchor="middle">3</text>
+      <text x="75" y="40" font-family="-apple-system, SF Pro Display, Helvetica Neue" font-size="11" fill="#6c7086" text-anchor="middle">Connections</text>
+    </g>
+
+    <!-- Divider -->
+    <line x1="170" y1="40" x2="170" y2="82" stroke="#45475a" stroke-width="0.5"/>
+
+    <!-- Disconnections -->
+    <g transform="translate(180, 38)">
+      <text x="75" y="20" font-family="SF Mono, Menlo, monospace" font-size="28" font-weight="700" fill="#f38ba8" text-anchor="middle">2</text>
+      <text x="75" y="40" font-family="-apple-system, SF Pro Display, Helvetica Neue" font-size="11" fill="#6c7086" text-anchor="middle">Disconnections</text>
+    </g>
+  </g>
+
+  <!-- Footer -->
+  <line x1="40" y1="554" x2="380" y2="554" stroke="#313244" stroke-width="1"/>
+  <g transform="translate(40, 570)">
+    <!-- Auto refresh indicator -->
+    <circle cx="8" cy="8" r="6" fill="none" stroke="#45475a" stroke-width="2"/>
+    <path d="M 8 2 A 6 6 0 0 1 14 8" fill="none" stroke="#6c7eff" stroke-width="2" stroke-linecap="round"/>
+    <text x="22" y="12" font-family="-apple-system, SF Pro Display, Helvetica Neue" font-size="11" fill="#6c7086">Next check in 7s</text>
+
+    <!-- Quit button -->
+    <text x="290" y="12" font-family="-apple-system, SF Pro Display, Helvetica Neue" font-size="12" font-weight="500" fill="#f38ba8">&#x23FB; Quit</text>
+  </g>
+
+  <!-- Window border -->
+  <rect x="20" y="20" width="380" height="640" rx="16" fill="none" stroke="#45475a" stroke-width="0.5"/>
+</svg>
