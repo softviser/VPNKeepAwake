@@ -54,7 +54,7 @@
 
 ### Download / İndirme
 
-1. Download the latest `VPNKeepAwake.app.zip` from [Releases](https://github.com/softviser/VPNKeepAwake/tree/main/Releases)
+1. Download the latest `VPNKeepAwake.app.zip` from [Releases](https://github.com/softviser/VPNKeepAwake/raw/refs/heads/main/Releases/VPNKeepAwake.app.zip)
 2. Extract the ZIP file / ZIP dosyasını açın
 3. Drag `VPNKeepAwake.app` to `/Applications` folder
 4. Double-click to launch / Çift tıklayarak açın
