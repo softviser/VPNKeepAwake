@@ -48,22 +48,13 @@
 | **Turkish / English** — Switch language instantly from settings | **Türkçe / İngilizce** — Ayarlardan anında dil değişimi |
 | **Dark / Light Mode** — Adapts to macOS theme automatically | **Dark / Light Mode** — macOS temasına otomatik uyum |
 
-## Menu Bar Icons
-
-| Icon | Meaning / Anlam |
-|---|---|
-| `lock.shield.fill` (green) | VPN connected, sleep protection active / VPN bağlı, koruma aktif |
-| `shield.fill` (orange) | VPN connected, protection issue / VPN bağlı, koruma sorunlu |
-| `shield.slash` (red) | VPN not connected / VPN bağlı değil |
-| `moon.zzz` (gray) | Protection disabled / Koruma devre dışı |
-
 ---
 
 ## Installation / Kurulum
 
 ### Download / İndirme
 
-1. Download the latest `VPNKeepAwake.app.zip` from [Releases](https://github.com/softviser/VPNKeepAwake/releases)
+1. Download the latest `VPNKeepAwake.app.zip` from [Releases](https://github.com/softviser/VPNKeepAwake/tree/main/Releases)
 2. Extract the ZIP file / ZIP dosyasını açın
 3. Drag `VPNKeepAwake.app` to `/Applications` folder
 4. Double-click to launch / Çift tıklayarak açın
