@@ -48,6 +48,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
             button.target = self
         }
 
+        AppState.shared.sleepManager.checkAccessibilityPermission()
         updateIcon()
         iconTimer = Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true) { [weak self] _ in
             self?.updateIcon()

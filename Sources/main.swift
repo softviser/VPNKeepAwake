@@ -618,6 +618,8 @@ class AppState: ObservableObject {
 
         secondsUntilNextUpdate = Int(settings.checkInterval)
 
+        sleepManager.checkAccessibilityPermission()
+        
         checkTimer = Timer.scheduledTimer(withTimeInterval: settings.checkInterval, repeats: true) { [weak self] _ in
             self?.check()
             self?.secondsUntilNextUpdate = Int(self?.settings.checkInterval ?? 10)
