@@ -21,14 +21,14 @@ mkdir -p "$BUILD_DIR"
 mkdir -p "$APP_BUNDLE/Contents/MacOS"
 mkdir -p "$APP_BUNDLE/Contents/Resources"
 
-# Compile Swift source (try Universal Binary, fallback to native arch)
+# Compile Swift sources (try Universal Binary, fallback to native arch)
 echo "Compiling Swift source..."
 swiftc -O \
     -sdk $(xcrun --show-sdk-path) \
     -target arm64-apple-macosx10.15 \
     -target x86_64-apple-macosx10.15 \
     -o "$APP_BUNDLE/Contents/MacOS/$APP_NAME" \
-    "$SCRIPT_DIR/Sources/main.swift" \
+    "$SCRIPT_DIR"/Sources/*.swift \
     -framework Cocoa \
     -framework IOKit \
     -framework SystemConfiguration \
@@ -36,7 +36,7 @@ swiftc -O \
 swiftc -O \
     -sdk $(xcrun --show-sdk-path) \
     -o "$APP_BUNDLE/Contents/MacOS/$APP_NAME" \
-    "$SCRIPT_DIR/Sources/main.swift" \
+    "$SCRIPT_DIR"/Sources/*.swift \
     -framework Cocoa \
     -framework IOKit \
     -framework SystemConfiguration
